@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend | Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-color: #333333;
+        }
+        h1, h2, h3, .lead {
+            color: #10b981;
+        }
+        .btn-primary {
+            background-color: #10b981;
+            border-color: #10b981;
+        }
+        .btn-primary:hover {
+            background-color: #0d9668;
+            border-color: #0d9668;
+        }
+        .navbar {
+            background-color: #121212 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #10b981 !important;
+        }
+        .form-control {
+            background-color: #333333;
+            border-color: #444444;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            background-color: #444444;
+            border-color: #10b981;
+            color: #ffffff;
+            box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.25);
+        }
+        label {
+            color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EcoTrend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="clothes.html">Clothes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cosmetic.html">Cosmetic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="house.html">House</a></li>
+                    <li class="nav-item"><a class="nav-link" href="others.html">Others</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Contact Us</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
