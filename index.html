@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode E-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .card {
+            background-color: #1e1e1e;
+        }
+        .card-title, .card-text {
+            color: #ffffff;
+        }
+        .card-footer {
+            background-color: #1e1e1e;
+            border-top: 1px solid #2e2e2e;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">EcoTrend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#clothes">Clothes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#house">House</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#care">Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#others">Others</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400.png?text=Slide+1" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400.png?text=Slide+2" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400.png?text=Slide+3" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <section id="clothes">
+            <h2 class="mb-4">Clothes</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+Item+1" class="card-img-top" alt="Clothes Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Clothes Item 1</h5>
+                            <p class="card-text">Description of the clothes item 1.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$19.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+Item+2" class="card-img-top" alt="Clothes Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Clothes Item 2</h5>
+                            <p class="card-text">Description of the clothes item 2.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$24.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+Item+3" class="card-img-top" alt="Clothes Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Clothes Item 3</h5>
+                            <p class="card-text">Description of the clothes item 3.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$29.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+Item+4" class="card-img-top" alt="Clothes Item 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Clothes Item 4</h5>
+                            <p class="card-text">Description of the clothes item 4.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$34.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="house" class="mt-5">
+            <h2 class="mb-4">House</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=House+Item+1" class="card-img-top" alt="House Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">House Item 1</h5>
+                            <p class="card-text">Description of the house item 1.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$39.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=House+Item+2" class="card-img-top" alt="House Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">House Item 2</h5>
+                            <p class="card-text">Description of the house item 2.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$44.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=House+Item+3" class="card-img-top" alt="House Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">House Item 3</h5>
+                            <p class="card-text">Description of the house item 3.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$49.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=House+Item+4" class="card-img-top" alt="House Item 4">
+                        <div class="card-body">
+                            <h5 class="card-title">House Item 4</h5>
+                            <p class="card-text">Description of the house item 4.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$54.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="care" class="mt-5">
+            <h2 class="mb-4">Care</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Care+Item+1" class="card-img-top" alt="Care Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Item 1</h5>
+                            <p class="card-text">Description of the care item 1.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$14.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Care+Item+2" class="card-img-top" alt="Care Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Item 2</h5>
+                            <p class="card-text">Description of the care item 2.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$19.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Care+Item+3" class="card-img-top" alt="Care Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Item 3</h5>
+                            <p class="card-text">Description of the care item 3.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$24.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Care+Item+4" class="card-img-top" alt="Care Item 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Care Item 4</h5>
+                            <p class="card-text">Description of the care item 4.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$29.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="others" class="mt-5">
+            <h2 class="mb-4">Others</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Other+Item+1" class="card-img-top" alt="Other Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Other Item 1</h5>
+                            <p class="card-text">Description of the other item 1.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$14.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Other+Item+2" class="card-img-top" alt="Other Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Other Item 2</h5>
+                            <p class="card-text">Description of the other item 2.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$19.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Other+Item+3" class="card-img-top" alt="Other Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Other Item 3</h5>
+                            <p class="card-text">Description of the other item 3.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$24.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200.png?text=Other+Item+4" class="card-img-top" alt="Other Item 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Other Item 4</h5>
+                            <p class="card-text">Description of the other item 4.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 mb-0">$29.99</span>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; 2023 Dark Mode E-commerce. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
