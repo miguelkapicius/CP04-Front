@@ -11,6 +11,9 @@
             background-color: #121212;
             color: #10b981;
         }
+        label{
+            color: #10b981
+        }
         .card {
             background-color: #1e1e1e;
         }
@@ -139,308 +142,356 @@
     </div>
 
     <div class="main-content">
-        <div class="content container mt-5">
-            <section id="clothes">
-                <h2 class="mb-4">Roupas</h2>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="camisa-ecologica.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1059640/camiseta_basica_algodao_sustentavel_845_1_9ec7f17b03b8fb7f1637374790fe0ba6.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Shirt">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Camisa Ecológica de Algodão Orgânico</h5>
-                                <p class="card-text">Camisa sustentável feita com algodão orgânico.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 99,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+        <div class="container mt-5">
+            <div class="row">
+                <aside class="col-md-2 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Filtros</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="categoryFilter" class="form-label">Categoria</label>
+                                    <select class="form-select" id="categoryFilter">
+                                        <option selected>Todas</option>
+                                        <option>Roupas</option>
+                                        <option>Casa</option>
+                                        <option>Beleza</option>
+                                        <option>Outros</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Faixa de Preço</label>
+                                    <div class="d-flex">
+                                        <input type="number" class="form-control me-2" placeholder="Min">
+                                        <input type="number" class="form-control" placeholder="Max">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Avaliação</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rating5">
+                                        <label class="form-check-label" for="rating5">5 estrelas</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rating4">
+                                        <label class="form-check-label" for="rating4">4 estrelas ou mais</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="rating3">
+                                        <label class="form-check-label" for="rating3">3 estrelas ou mais</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="calca-jeans-reciclada.html">
-                                <img src="https://acdn.mitiendanube.com/stores/003/859/035/products/4b0cf032e73b8f1db3051c6ac9684c02-266c122c062ad6393217085351637450-1024-1024.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Jeans">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Calça Jeans Reciclada</h5>
-                                <p class="card-text">Calça jeans feita com materiais reciclados.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 149,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                </aside>
+                <div class="col-md-10">
+                    <div class="content">
+                        <section id="clothes">
+                            <h2 class="mb-4">Roupas</h2>
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="camisa-ecologica.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/1059640/camiseta_basica_algodao_sustentavel_845_1_9ec7f17b03b8fb7f1637374790fe0ba6.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Shirt">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Camisa Ecológica de Algodão Orgânico</h5>
+                                            <p class="card-text">Camisa sustentável feita com algodão orgânico.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 99,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="calca-jeans-reciclada.html">
+                                            <img src="https://acdn.mitiendanube.com/stores/003/859/035/products/4b0cf032e73b8f1db3051c6ac9684c02-266c122c062ad6393217085351637450-1024-1024.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Jeans">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Calça Jeans Reciclada</h5>
+                                            <p class="card-text">Calça jeans feita com materiais reciclados.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 149,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="vestido-fibras-naturais.html">
+                                            <img src="https://es.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dwa639f54c/images/Full_PDP_h/Benetton_24P_3U53DV01H_100_FS_Full_PDP_h.jpg?sw=768&sh=1024" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Dress">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vestido de Fibras Naturais</h5>
+                                            <p class="card-text">Vestido elegante feito com fibras naturais sustentáveis.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 199,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="sueter-la-reciclada.html">
+                                            <img src="https://ae01.alicdn.com/kf/Se7f6d09e81dc46e9972265174350b92ac/Su-ter-de-gola-alta-manga-comprida-masculino-blusa-gola-alta-cor-s-lida-roupas-de.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Sweater">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Suéter de Lã Reciclada</h5>
+                                            <p class="card-text">Suéter quente e confortável feito com lã reciclada.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 179,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="vestido-fibras-naturais.html">
-                                <img src="https://es.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dwa639f54c/images/Full_PDP_h/Benetton_24P_3U53DV01H_100_FS_Full_PDP_h.jpg?sw=768&sh=1024" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Dress">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Vestido de Fibras Naturais</h5>
-                                <p class="card-text">Vestido elegante feito com fibras naturais sustentáveis.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 199,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        </section>
+
+                        <hr />
+
+                        <section id="house" class="mt-5">
+                            <h2 class="mb-4">Casa</h2>
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="luminaria-sustentavel.html">
+                                            <img src="https://i.pinimg.com/originals/67/8d/01/678d014d9c0aa07a2687e7ce959a4e7c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Luminária Sustentável">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Luminária Sustentável</h5>
+                                            <p class="card-text">Luminária feita com materiais reciclados e LED de baixo consumo.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 129,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="conjunto-copos.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/977231/jogo_de_copo_de_vidro_liso_350ml_com_6_unidades_dia_a_dia_dynasty_3082_1_bcac1adb718740e8dc4281ac6a1d2c20.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Conjunto de Copos">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Conjunto de Copos</h5>
+                                            <p class="card-text">Conjunto de copos feitos de vidro reciclado, elegantes e ecológicos.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 89,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="tapete-ecologico.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/1171102/tapete_ecologico_kaminha_jeans_71_1_7d84cd3cd056f027f2cac4e10b2e2dab.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Tapete Ecológico">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tapete Ecológico</h5>
+                                            <p class="card-text">Tapete feito de fibras naturais e tingido com corantes vegetais.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 199,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="organizador-sustentavel.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/736520/cesto_organizador_tamanho_pequeno_p_de_materia_prima_sustentavel_para_arrumacao_e_organizacao_geral__5051_1_a740a3d1ab0aea325a9ceea06dec4d8c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Organizador Sustentável">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Organizador Sustentável</h5>
+                                            <p class="card-text">Organizador multiuso feito de bambu, material renovável e durável.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 149,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="sueter-la-reciclada.html">
-                                <img src="https://ae01.alicdn.com/kf/Se7f6d09e81dc46e9972265174350b92ac/Su-ter-de-gola-alta-manga-comprida-masculino-blusa-gola-alta-cor-s-lida-roupas-de.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Sweater">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Suéter de Lã Reciclada</h5>
-                                <p class="card-text">Suéter quente e confortável feito com lã reciclada.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 179,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                        </section>
+
+                        <hr />
+
+                        <section id="care" class="mt-5">
+                            <h2 class="mb-4">Beleza</h2>
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="shampoo-solido.html">
+                                            <img src="https://static.paodeacucar.com/img/uploads/1/45/24275045.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Shampoo Sólido">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Shampoo Sólido</h5>
+                                            <p class="card-text">Shampoo sólido natural, livre de plástico e produtos químicos agressivos.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 39,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="creme-hidratante-vegano.html">
+                                            <img src="https://soneda.vteximg.com.br/arquivos/ids/415613-1000-1000/foto_original.jpg?v=638200091515470000" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Creme Hidratante Vegano">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Creme Hidratante Vegano</h5>
+                                            <p class="card-text">Creme hidratante corporal 100% vegano e com ingredientes naturais.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 59,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="oleo-essencial.html">
+                                            <img src="https://visso.com.br/wp-content/uploads/2022/03/img_quadrada_produtos-29.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Óleo Essencial">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Óleo Essencial</h5>
+                                            <p class="card-text">Óleo essencial orgânico para aromaterapia e cuidados com a pele.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 29,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="sabonete-artesanal.html">
+                                            <img src="https://www.rimaq.com.br/wp-content/uploads/2018/06/213253-produtos-para-sabonete-artesanal-o-que-e-preciso-para-fazer-os-seus.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sabonete Artesanal">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sabonete Artesanal</h5>
+                                            <p class="card-text">Sabonete artesanal feito com ingredientes naturais e óleos essenciais.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 19,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
+                        <hr />
+
+                        <section id="others" class="mt-5">
+                            <h2 class="mb-4">Outros</h2>
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="caneca-ecologica.html">
+                                            <img src="https://15887.cdn.simplo7.net/static/15887/sku/copos-canecas-e-xicaras-sustentaveis-caneca-ecologica-em-fibra-de-madeira-1720613847104.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Caneca Ecológica">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Caneca Ecológica</h5>
+                                            <p class="card-text">Caneca feita de bambu biodegradável, perfeita para seu café da manhã sustentável.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 34,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="escova-de-dentes-de-bambu.html">
+                                            <img src="https://cdn.awsli.com.br/2500x2500/1194/1194913/produto/205436080/20221027-imagem-escova-embalagem-faaxno.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Escova de Dentes de Bambu">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Escova de Dentes de Bambu</h5>
+                                            <p class="card-text">Escova de dentes ecológica feita de bambu, com cerdas macias e biodegradáveis.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 15,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="sacola-reutilizavel.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/920975/bolsa_ecobag_sacola_de_ombro_reutilizavel_ecologica_dobravel_compras_mercado_3003_1_0050c93f390a7dfc648e77b88dfa51a7.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sacola Reutilizável">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sacola Reutilizável</h5>
+                                            <p class="card-text">Sacola de compras reutilizável feita de algodão orgânico, resistente e lavável.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 24,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card" style="height: 30rem;">
+                                        <a href="garrafa-termica-sustentavel.html">
+                                            <img src="https://images.tcdn.com.br/img/img_prod/689875/garrafa_termica_b_kind_verde_amazon_127_1_04ddcaf51afd187f5a1d331f1bd95252.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Garrafa Térmica Sustentável">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Garrafa Térmica Sustentável</h5>
+                                            <p class="card-text">Garrafa térmica de aço inoxidável, livre de BPA e ideal para manter suas bebidas na temperatura desejada.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="h5 mb-0">R$ 49,90</span>
+                                                <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </section>
-
-            <hr />
-
-            <section id="house" class="mt-5">
-                <h2 class="mb-4">Casa</h2>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="luminaria-sustentavel.html">
-                                <img src="https://i.pinimg.com/originals/67/8d/01/678d014d9c0aa07a2687e7ce959a4e7c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Luminária Sustentável">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Luminária Sustentável</h5>
-                                <p class="card-text">Luminária feita com materiais reciclados e LED de baixo consumo.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 129,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="conjunto-copos.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/977231/jogo_de_copo_de_vidro_liso_350ml_com_6_unidades_dia_a_dia_dynasty_3082_1_bcac1adb718740e8dc4281ac6a1d2c20.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Conjunto de Copos">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Conjunto de Copos</h5>
-                                <p class="card-text">Conjunto de copos feitos de vidro reciclado, elegantes e ecológicos.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 89,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="tapete-ecologico.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1171102/tapete_ecologico_kaminha_jeans_71_1_7d84cd3cd056f027f2cac4e10b2e2dab.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Tapete Ecológico">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Tapete Ecológico</h5>
-                                <p class="card-text">Tapete feito de fibras naturais e tingido com corantes vegetais.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 199,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="organizador-sustentavel.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/736520/cesto_organizador_tamanho_pequeno_p_de_materia_prima_sustentavel_para_arrumacao_e_organizacao_geral__5051_1_a740a3d1ab0aea325a9ceea06dec4d8c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Organizador Sustentável">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Organizador Sustentável</h5>
-                                <p class="card-text">Organizador multiuso feito de bambu, material renovável e durável.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 149,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr />
-
-                <section id="care" class="mt-5">
-                <h2 class="mb-4">Beleza</h2>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="shampoo-solido.html">
-                                <img src="https://static.paodeacucar.com/img/uploads/1/45/24275045.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Shampoo Sólido">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Shampoo Sólido</h5>
-                                <p class="card-text">Shampoo sólido natural, livre de plástico e produtos químicos agressivos.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 39,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="creme-hidratante-vegano.html">
-                                <img src="https://soneda.vteximg.com.br/arquivos/ids/415613-1000-1000/foto_original.jpg?v=638200091515470000" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Creme Hidratante Vegano">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Creme Hidratante Vegano</h5>
-                                <p class="card-text">Creme hidratante corporal 100% vegano e com ingredientes naturais.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 59,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="oleo-essencial.html">
-                                <img src="https://visso.com.br/wp-content/uploads/2022/03/img_quadrada_produtos-29.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Óleo Essencial">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Óleo Essencial</h5>
-                                <p class="card-text">Óleo essencial orgânico para aromaterapia e cuidados com a pele.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 29,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="sabonete-artesanal.html">
-                                <img src="https://www.rimaq.com.br/wp-content/uploads/2018/06/213253-produtos-para-sabonete-artesanal-o-que-e-preciso-para-fazer-os-seus.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sabonete Artesanal">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Sabonete Artesanal</h5>
-                                <p class="card-text">Sabonete artesanal feito com ingredientes naturais e óleos essenciais.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 19,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr />
-
-            <section id="others" class="mt-5">
-                <h2 class="mb-4">Outros</h2>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="caneca-ecologica.html">
-                                <img src="https://15887.cdn.simplo7.net/static/15887/sku/copos-canecas-e-xicaras-sustentaveis-caneca-ecologica-em-fibra-de-madeira-1720613847104.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Caneca Ecológica">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Caneca Ecológica</h5>
-                                <p class="card-text">Caneca feita de bambu biodegradável, perfeita para seu café da manhã sustentável.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 34,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="escova-de-dentes-de-bambu.html">
-                                <img src="https://cdn.awsli.com.br/2500x2500/1194/1194913/produto/205436080/20221027-imagem-escova-embalagem-faaxno.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Escova de Dentes de Bambu">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Escova de Dentes de Bambu</h5>
-                                <p class="card-text">Escova de dentes ecológica feita de bambu, com cerdas macias e biodegradáveis.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 15,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="sacola-reutilizavel.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/920975/bolsa_ecobag_sacola_de_ombro_reutilizavel_ecologica_dobravel_compras_mercado_3003_1_0050c93f390a7dfc648e77b88dfa51a7.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sacola Reutilizável">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Sacola Reutilizável</h5>
-                                <p class="card-text">Sacola de compras reutilizável feita de algodão orgânico, resistente e lavável.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 24,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card" style="height: 30rem;">
-                            <a href="garrafa-termica-sustentavel.html">
-                                <img src="https://images.tcdn.com.br/img/img_prod/689875/garrafa_termica_b_kind_verde_amazon_127_1_04ddcaf51afd187f5a1d331f1bd95252.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Garrafa Térmica Sustentável">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Garrafa Térmica Sustentável</h5>
-                                <p class="card-text">Garrafa térmica de aço inoxidável, livre de BPA e ideal para manter suas bebidas na temperatura desejada.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">R$ 49,90</span>
-                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </div>
 
