@@ -30,7 +30,7 @@ Este projeto tem como objetivo a criação de uma interface de usuário atraente
 ## Tecnologias utilizadas
 <a href="https://www.google.com/search?q=html5" target="_blank" style="margin-right:10px"><img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&labelColor=orange&logoColor=white&color=8c3b0d"></a>
 <a href="https://www.google.com/search?q=css+3" target="_blank" style="margin-right:10px"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&labelColor=blue&color=3b509c"></a>
-<a href="https://www.google.com/search?q=css+3" target="_blank" style="margin-right:10px"><img src="https://img.shields.io/badge/Bootstrap-239120?&style=for-the-badge&logo=bootstrap&labelColor=c4a5c9&color=5f3466"></a>
+<a href="https://www.google.com/search?q=bootstrap" target="_blank" style="margin-right:10px"><img src="https://img.shields.io/badge/Bootstrap-239120?&style=for-the-badge&logo=bootstrap&labelColor=c4a5c9&color=5f3466"></a>
 
 
 ## Colaboradores do Projeto
