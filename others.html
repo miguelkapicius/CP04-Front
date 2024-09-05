@@ -9,17 +9,30 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #10b981;
         }
         .card {
             background-color: #1e1e1e;
-            border-color: #333333;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card span {
+            color: #10b981;
         }
         .card-title, .card-text {
-            color: #ffffff;
-        }
-        h1, h2, h3, .lead {
             color: #10b981;
+        }
+        .card-footer {
+            background-color: #1e1e1e;
+        }
+        .navbar {
+            background-color: #121212 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #10b981 !important;
         }
         .btn-primary {
             background-color: #10b981;
@@ -29,11 +42,25 @@
             background-color: #0d9668;
             border-color: #0d9668;
         }
-        .navbar {
-            background-color: #121212 !important;
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
         }
-        .navbar-brand, .nav-link {
-            color: #10b981 !important;
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
         }
         .main-content {
             min-height: 100vh;
@@ -67,42 +94,79 @@
     <div class="main-content">
         <div class="content container mt-5">
             <h1 class="text-center mb-5">Others</h1>
-
-            <div class="row mb-5">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Other+1" class="card-img-top" alt="Other 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Reusable Water Bottle</h5>
-                            <p class="card-text">Durable and eco-friendly water bottle.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+            <section id="others" class="mt-5">
+                <h2 class="mb-4">Outros</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="caneca-ecologica.html">
+                                <img src="https://15887.cdn.simplo7.net/static/15887/sku/copos-canecas-e-xicaras-sustentaveis-caneca-ecologica-em-fibra-de-madeira-1720613847104.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Caneca Ecológica">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Caneca Ecológica</h5>
+                                <p class="card-text">Caneca feita de bambu biodegradável, perfeita para seu café da manhã sustentável.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 34,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="escova-de-dentes-de-bambu.html">
+                                <img src="https://cdn.awsli.com.br/2500x2500/1194/1194913/produto/205436080/20221027-imagem-escova-embalagem-faaxno.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Escova de Dentes de Bambu">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Escova de Dentes de Bambu</h5>
+                                <p class="card-text">Escova de dentes ecológica feita de bambu, com cerdas macias e biodegradáveis.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 15,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="sacola-reutilizavel.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/920975/bolsa_ecobag_sacola_de_ombro_reutilizavel_ecologica_dobravel_compras_mercado_3003_1_0050c93f390a7dfc648e77b88dfa51a7.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sacola Reutilizável">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Sacola Reutilizável</h5>
+                                <p class="card-text">Sacola de compras reutilizável feita de algodão orgânico, resistente e lavável.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 24,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="garrafa-termica-sustentavel.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/689875/garrafa_termica_b_kind_verde_amazon_127_1_04ddcaf51afd187f5a1d331f1bd95252.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Garrafa Térmica Sustentável">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Garrafa Térmica Sustentável</h5>
+                                <p class="card-text">Garrafa térmica de aço inoxidável, livre de BPA e ideal para manter suas bebidas na temperatura desejada.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 49,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Other+2" class="card-img-top" alt="Other 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Solar-powered Charger</h5>
-                            <p class="card-text">Charge your devices using solar energy.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Other+3" class="card-img-top" alt="Other 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Biodegradable Phone Case</h5>
-                            <p class="card-text">Protect your phone while being eco-friendly.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more items as needed -->
-
+            </section>
         </div>
     </div>
 

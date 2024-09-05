@@ -9,17 +9,30 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #10b981;
         }
         .card {
             background-color: #1e1e1e;
-            border-color: #333333;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card span {
+            color: #10b981;
         }
         .card-title, .card-text {
-            color: #ffffff;
-        }
-        h1, h2, h3, .lead {
             color: #10b981;
+        }
+        .card-footer {
+            background-color: #1e1e1e;
+        }
+        .navbar {
+            background-color: #121212 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #10b981 !important;
         }
         .btn-primary {
             background-color: #10b981;
@@ -29,11 +42,25 @@
             background-color: #0d9668;
             border-color: #0d9668;
         }
-        .navbar {
-            background-color: #121212 !important;
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
         }
-        .navbar-brand, .nav-link {
-            color: #10b981 !important;
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
         }
         .main-content {
             min-height: 100vh;
@@ -67,42 +94,79 @@
     <div class="main-content">
         <div class="content container mt-5">
             <h1 class="text-center mb-5">Cosmetics</h1>
-
-            <div class="row mb-5">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Cosmetic+1" class="card-img-top" alt="Cosmetic 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Natural Face Cream</h5>
-                            <p class="card-text">Made with organic ingredients for healthy skin.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+            <section id="care" class="mt-5">
+                <h2 class="mb-4">Beleza</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="shampoo-solido.html">
+                                <img src="https://static.paodeacucar.com/img/uploads/1/45/24275045.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Shampoo Sólido">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Shampoo Sólido</h5>
+                                <p class="card-text">Shampoo sólido natural, livre de plástico e produtos químicos agressivos.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 39,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="creme-hidratante-vegano.html">
+                                <img src="https://soneda.vteximg.com.br/arquivos/ids/415613-1000-1000/foto_original.jpg?v=638200091515470000" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Creme Hidratante Vegano">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Creme Hidratante Vegano</h5>
+                                <p class="card-text">Creme hidratante corporal 100% vegano e com ingredientes naturais.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 59,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="oleo-essencial.html">
+                                <img src="https://visso.com.br/wp-content/uploads/2022/03/img_quadrada_produtos-29.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Óleo Essencial">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Óleo Essencial</h5>
+                                <p class="card-text">Óleo essencial orgânico para aromaterapia e cuidados com a pele.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 29,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="sabonete-artesanal.html">
+                                <img src="https://www.rimaq.com.br/wp-content/uploads/2018/06/213253-produtos-para-sabonete-artesanal-o-que-e-preciso-para-fazer-os-seus.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Sabonete Artesanal">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Sabonete Artesanal</h5>
+                                <p class="card-text">Sabonete artesanal feito com ingredientes naturais e óleos essenciais.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 19,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Cosmetic+2" class="card-img-top" alt="Cosmetic 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Eco-friendly Shampoo</h5>
-                            <p class="card-text">Plastic-free shampoo bar for sustainable hair care.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Cosmetic+3" class="card-img-top" alt="Cosmetic 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Vegan Lipstick</h5>
-                            <p class="card-text">Cruelty-free lipstick with natural pigments.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more cosmetic items as needed -->
-
+            </section>
         </div>
     </div>
 

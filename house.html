@@ -8,17 +8,30 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #10b981;
         }
         .card {
             background-color: #1e1e1e;
-            border-color: #333333;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card span {
+            color: #10b981;
         }
         .card-title, .card-text {
-            color: #ffffff;
-        }
-        h1, h2, h3, .lead {
             color: #10b981;
+        }
+        .card-footer {
+            background-color: #1e1e1e;
+        }
+        .navbar {
+            background-color: #121212 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #10b981 !important;
         }
         .btn-primary {
             background-color: #10b981;
@@ -28,11 +41,25 @@
             background-color: #0d9668;
             border-color: #0d9668;
         }
-        .navbar {
-            background-color: #121212 !important;
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
         }
-        .navbar-brand, .nav-link {
-            color: #10b981 !important;
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
         }
         .main-content {
             min-height: 100vh;
@@ -68,40 +95,79 @@
         <div class="content container mt-5">
             <h1 class="text-center mb-5">House</h1>
 
-            <div class="row mb-5">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=House+1" class="card-img-top" alt="House 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Bamboo Cutlery Set</h5>
-                            <p class="card-text">Eco-friendly alternative to plastic utensils.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+            <section id="house" class="mt-5">
+                <h2 class="mb-4">Casa</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="luminaria-sustentavel.html">
+                                <img src="https://i.pinimg.com/originals/67/8d/01/678d014d9c0aa07a2687e7ce959a4e7c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Luminária Sustentável">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Luminária Sustentável</h5>
+                                <p class="card-text">Luminária feita com materiais reciclados e LED de baixo consumo.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 129,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="conjunto-copos.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/977231/jogo_de_copo_de_vidro_liso_350ml_com_6_unidades_dia_a_dia_dynasty_3082_1_bcac1adb718740e8dc4281ac6a1d2c20.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Conjunto de Copos">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto de Copos</h5>
+                                <p class="card-text">Conjunto de copos feitos de vidro reciclado, elegantes e ecológicos.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 89,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="tapete-ecologico.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1171102/tapete_ecologico_kaminha_jeans_71_1_7d84cd3cd056f027f2cac4e10b2e2dab.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Tapete Ecológico">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Tapete Ecológico</h5>
+                                <p class="card-text">Tapete feito de fibras naturais e tingido com corantes vegetais.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 199,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="organizador-sustentavel.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/736520/cesto_organizador_tamanho_pequeno_p_de_materia_prima_sustentavel_para_arrumacao_e_organizacao_geral__5051_1_a740a3d1ab0aea325a9ceea06dec4d8c.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Organizador Sustentável">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Organizador Sustentável</h5>
+                                <p class="card-text">Organizador multiuso feito de bambu, material renovável e durável.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 149,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=House+2" class="card-img-top" alt="House 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Recycled Glass Vase</h5>
-                            <p class="card-text">Beautiful vase made from recycled glass.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=House+3" class="card-img-top" alt="House 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Organic Cotton Bedding</h5>
-                            <p class="card-text">Soft and sustainable bedding for a good night's sleep.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more house items as needed -->
+            </section>
 
         </div>
     </div>
