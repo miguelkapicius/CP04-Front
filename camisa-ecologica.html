@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrend | Contato</title>
+    <title>Camisa Ecológica | EcoTrend</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
-        }
-        .card {
-            background-color: #1e1e1e;
-            border-color: #333333;
-        }
-        h1, h2, h3, .lead {
             color: #10b981;
+        }
+        .navbar, .card, .card-footer {
+            background-color: #1e1e1e !important;
+        }
+        .navbar-brand, .nav-link, .card-title, .card-text {
+            color: #10b981 !important;
         }
         .btn-primary {
             background-color: #10b981;
@@ -25,26 +24,6 @@
         .btn-primary:hover {
             background-color: #0d9668;
             border-color: #0d9668;
-        }
-        .navbar {
-            background-color: #121212 !important;
-        }
-        .navbar-brand, .nav-link {
-            color: #10b981 !important;
-        }
-        .form-control {
-            background-color: #333333;
-            border-color: #444444;
-            color: #ffffff;
-        }
-        .form-control:focus {
-            background-color: #444444;
-            border-color: #10b981;
-            color: #ffffff;
-            box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.25);
-        }
-        label {
-            color: #10b981;
         }
         .main-content {
             min-height: 100vh;
@@ -77,33 +56,48 @@
 
     <div class="main-content">
         <div class="content container mt-5">
-            <h1 class="text-center mb-5">Entre em Contato</h1>
-
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">E-mail</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                            </form>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1059640/camiseta_basica_algodao_sustentavel_845_1_9ec7f17b03b8fb7f1637374790fe0ba6.png" class="img-fluid rounded" alt="Camisa Ecológica de Algodão Orgânico">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="mb-4">Camisa Ecológica de Algodão Orgânico</h1>
+                    <p class="lead">Uma camisa sustentável feita com algodão orgânico, perfeita para um estilo consciente e confortável.</p>
+                    <h2 class="mb-3">R$ 99,90</h2>
+                    <p>Características:</p>
+                    <ul>
+                        <li>100% algodão orgânico</li>
+                        <li>Tingimento natural</li>
+                        <li>Produção ética e sustentável</li>
+                        <li>Disponível em várias cores</li>
+                        <li>Tamanhos: P, M, G, GG</li>
+                    </ul>
+                    <form>
+                        <div class="mb-3">
+                            <label for="size" class="form-label">Tamanho:</label>
+                            <select class="form-select" id="size" required>
+                                <option value="">Selecione o tamanho</option>
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantidade:</label>
+                            <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Adicionar ao Carrinho</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h3>Descrição do Produto</h3>
+                    <p>Nossa Camisa Ecológica de Algodão Orgânico é a escolha perfeita para quem busca conforto e sustentabilidade. Feita com 100% algodão orgânico, esta camisa é produzida sem o uso de pesticidas ou produtos químicos nocivos, respeitando o meio ambiente e a saúde dos agricultores.</p>
+                    <p>O processo de tingimento utiliza corantes naturais, reduzindo ainda mais o impacto ambiental. Além disso, toda a cadeia de produção segue rigorosos padrões éticos, garantindo condições justas de trabalho.</p>
+                    <p>Disponível em várias cores e tamanhos, esta camisa é versátil e pode ser usada em diversas ocasiões. Seu corte moderno e confortável a torna ideal para o dia a dia, enquanto sua durabilidade assegura que você poderá aproveitá-la por muito tempo.</p>
+                    <p>Ao escolher nossa Camisa Ecológica, você não está apenas investindo em uma peça de qualidade, mas também contribuindo para um futuro mais sustentável na indústria da moda.</p>
                 </div>
             </div>
         </div>
