@@ -9,17 +9,30 @@
     <style>
         body {
             background-color: #121212;
-            color: #ffffff;
+            color: #10b981;
         }
         .card {
             background-color: #1e1e1e;
-            border-color: #333333;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card span {
+            color: #10b981;
         }
         .card-title, .card-text {
-            color: #ffffff;
-        }
-        h1, h2, h3, .lead {
             color: #10b981;
+        }
+        .card-footer {
+            background-color: #1e1e1e;
+        }
+        .navbar {
+            background-color: #121212 !important;
+        }
+        .navbar-brand, .nav-link {
+            color: #10b981 !important;
         }
         .btn-primary {
             background-color: #10b981;
@@ -29,11 +42,25 @@
             background-color: #0d9668;
             border-color: #0d9668;
         }
-        .navbar {
-            background-color: #121212 !important;
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
         }
-        .navbar-brand, .nav-link {
-            color: #10b981 !important;
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
         }
         .main-content {
             min-height: 100vh;
@@ -68,41 +95,79 @@
         <div class="content container mt-5">
             <h1 class="text-center mb-5">Clothes</h1>
 
-            <div class="row mb-5">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+1" class="card-img-top" alt="Clothes 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Eco-friendly T-shirt</h5>
-                            <p class="card-text">Made from 100% organic cotton.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+            <section id="clothes">
+                <h2 class="mb-4">Roupas</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="camisa-ecologica.html">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1059640/camiseta_basica_algodao_sustentavel_845_1_9ec7f17b03b8fb7f1637374790fe0ba6.png" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Shirt">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Camisa Ecológica de Algodão Orgânico</h5>
+                                <p class="card-text">Camisa sustentável feita com algodão orgânico.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 99,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="calca-jeans-reciclada.html">
+                                <img src="https://acdn.mitiendanube.com/stores/003/859/035/products/4b0cf032e73b8f1db3051c6ac9684c02-266c122c062ad6393217085351637450-1024-1024.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Jeans">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Calça Jeans Reciclada</h5>
+                                <p class="card-text">Calça jeans feita com materiais reciclados.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 149,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="vestido-fibras-naturais.html">
+                                <img src="https://es.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dwa639f54c/images/Full_PDP_h/Benetton_24P_3U53DV01H_100_FS_Full_PDP_h.jpg?sw=768&sh=1024" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Dress">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Vestido de Fibras Naturais</h5>
+                                <p class="card-text">Vestido elegante feito com fibras naturais sustentáveis.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">R$ 199,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card" style="height: 30rem;">
+                            <a href="sueter-la-reciclada.html">
+                                <img src="https://ae01.alicdn.com/kf/Se7f6d09e81dc46e9972265174350b92ac/Su-ter-de-gola-alta-manga-comprida-masculino-blusa-gola-alta-cor-s-lida-roupas-de.jpg" class="card-img-top img-fluid" style="max-height: 18rem; object-fit: cover; object-position: top;" alt="Eco-friendly Sweater">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Suéter de Lã Reciclada</h5>
+                                <p class="card-text">Suéter quente e confortável feito com lã reciclada.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0 ">R$ 179,90</span>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+2" class="card-img-top" alt="Clothes 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Recycled Denim Jeans</h5>
-                            <p class="card-text">Stylish jeans made from recycled materials.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200.png?text=Clothes+3" class="card-img-top" alt="Clothes 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainable Hoodie</h5>
-                            <p class="card-text">Cozy hoodie made from sustainable fabrics.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more clothes items as needed -->
-
+            </section>
         </div>
     </div>
 
